@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Sugar Predictor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 450px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            color: #555;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .result.show {
+            display: block;
+        }
+
+        .result-item {
+            margin-bottom: 15px;
+        }
+
+        .result-label {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .result-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .diagnosis {
+            padding: 10px 20px;
+            border-radius: 6px;
+            display: inline-block;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .diagnosis.normal {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .diagnosis.prediabetes {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .diagnosis.diabetes {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Sugar Predictor</h1>
+        
+        <form id="predictionForm">
+            <div class="input-group">
+                <label for="age">Enter Age</label>
+                <input type="number" id="age" name="age" required min="1" max="120" placeholder="e.g., 45">
+            </div>
+            
+            <button type="submit">Predict</button>
+        </form>
+
+        <div class="result" id="result">
+            <div class="result-item">
+                <div class="result-label">Predicted Blood Sugar Level</div>
+                <div class="result-value" id="bloodSugar"></div>
+            </div>
+            
+            <div class="result-item">
+                <div class="result-label">Diagnosis</div>
+                <div id="diagnosisContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('predictionForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const age = document.getElementById('age').value;
+            const formData = new FormData();
+            formData.append('age', age);
+            
+            const response = await fetch('/predict', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const data = await response.json();
+            
+            document.getElementById('bloodSugar').textContent = data.blood_sugar + ' mg/dL';
+            
+            const diagnosisClass = data.diagnosis.toLowerCase().replace(' ', '');
+            document.getElementById('diagnosisContainer').innerHTML = 
+                `<span class="diagnosis ${diagnosisClass}">${data.diagnosis}</span>`;
+            
+            document.getElementById('result').classList.add('show');
+        });
+    </script>
+</body>
+</html>
