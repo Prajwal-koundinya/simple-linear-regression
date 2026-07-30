@@ -237,28 +237,54 @@ Example:
 
 ---
 
-# 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push the branch
-5. Open a Pull Request
-
 ---
 
-# ⭐ Support
-
-If you found this project helpful, consider giving it a ⭐ on GitHub.
-
----
+# 👨‍💻 Author
 
 <div align="center">
 
-### Happy Learning! 🚀📈
+<img src="https://github.com/Prajwal-koundinya.png" width="160" style="border-radius:50%;" alt="Prajwal Koundinya"/>
 
-Made with ❤️ using Python & Scikit-Learn
+## **Prajwal Koundinya**
+
+**AI Engineer • Machine Learning Enthusiast • Deep Learning • Computer Vision**
+
+Passionate about building intelligent systems that solve real-world problems through Machine Learning, Computer Vision, Explainable AI, and Full-Stack AI applications.
+
+<p align="center">
+
+<a href="https://github.com/Prajwal-koundinya">
+<img src="https://img.shields.io/badge/GitHub-Prajwal--koundinya-181717?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="https://github.com/Prajwal-koundinya?tab=repositories">
+<img src="https://img.shields.io/badge/View-Projects-blue?style=for-the-badge"/>
+</a>
+
+<a href="https://github.com/Prajwal-koundinya?tab=followers">
+<img src="https://img.shields.io/github/followers/Prajwal-koundinya?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="https://github.com/Prajwal-koundinya?tab=stars">
+<img src="https://img.shields.io/github/stars/Prajwal-koundinya?affiliations=OWNER&style=for-the-badge"/>
+</a>
+
+</p>
+
+---
+
+### 🌟 Let's Connect
+
+If you found this project useful, consider giving it a ⭐ and following me on GitHub for more Machine Learning, Deep Learning, AI, and Open Source projects.
+
+🔗 **GitHub:**  
+https://github.com/Prajwal-koundinya
+
+---
+
+<p align="center">
+Made with ❤️ by <strong>Prajwal Koundinya</strong><br>
+Building AI that turns ideas into impact 🚀
+</p>
 
 </div>
