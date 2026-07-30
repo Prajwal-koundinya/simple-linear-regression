@@ -232,8 +232,6 @@ Example:
 
 <div align="center">
 
-<img src="https://github.com/Prajwal-koundinya.png" width="160" style="border-radius:50%;" alt="Prajwal Koundinya"/>
-
 ## **Prajwal Koundinya**
 
 **AI Engineer • Machine Learning Enthusiast • Deep Learning • Computer Vision**
