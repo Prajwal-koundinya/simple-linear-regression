@@ -229,7 +229,9 @@ Example:
 ---
 
 # 👨‍💻 Author
+
 <div align="center">
+   
 ## **Prajwal Koundinya**
 
 **AI Engineer • Machine Learning Enthusiast • Deep Learning • Computer Vision**
