@@ -1,1 +1,264 @@
-# simple-linear-regression
+<div align="center">
+
+# 📈 Linear Regression
+### *Predicting the Future, One Straight Line at a Time.*
+
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
+
+---
+
+*A beginner-friendly implementation of Linear Regression using Python and Scikit-Learn with visualization, training, evaluation, and prediction.*
+
+</div>
+
+---
+
+# 📚 Table of Contents
+
+- 📖 About
+- ✨ Features
+- 📂 Project Structure
+- 🛠 Technologies Used
+- ⚙ Installation
+- ▶ Usage
+- 📊 Results
+- 📈 Evaluation Metrics
+- 🚀 Future Improvements
+- 🤝 Contributing
+- 📄 License
+
+---
+
+# 📖 About
+
+Linear Regression is one of the simplest yet most powerful supervised machine learning algorithms. It learns the relationship between an independent variable (**X**) and a dependent variable (**Y**) by fitting the best possible straight line through the data.
+
+The objective is to predict continuous numerical values.
+
+---
+
+# ✨ Features
+
+- ✅ Data Loading
+- ✅ Data Preprocessing
+- ✅ Train-Test Split
+- ✅ Model Training
+- ✅ Prediction
+- ✅ Data Visualization
+- ✅ Regression Line Plot
+- ✅ Model Evaluation
+- ✅ Beginner Friendly Code
+
+---
+
+# 📂 Project Structure
+
+```text
+Linear-Regression/
+│
+├── data/
+│   └── dataset.csv
+│
+├── notebooks/
+│   └── LinearRegression.ipynb
+│
+├── images/
+│   ├── scatter_plot.png
+│   └── regression_line.png
+│
+├── src/
+│   └── linear_regression.py
+│
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
+
+---
+
+# 🛠 Technologies Used
+
+| Technology | Purpose |
+|------------|----------|
+| 🐍 Python | Programming Language |
+| 📊 Pandas | Data Analysis |
+| 🔢 NumPy | Numerical Computing |
+| 📉 Matplotlib | Visualization |
+| 🤖 Scikit-Learn | Machine Learning |
+
+---
+
+# ⚙ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/Linear-Regression.git
+```
+
+Move into the project
+
+```bash
+cd Linear-Regression
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# ▶ Usage
+
+Run the training script
+
+```bash
+python src/linear_regression.py
+```
+
+Or open the notebook
+
+```bash
+jupyter notebook notebooks/LinearRegression.ipynb
+```
+
+---
+
+# 📊 Workflow
+
+```text
+Dataset
+   │
+   ▼
+Data Cleaning
+   │
+   ▼
+Feature Selection
+   │
+   ▼
+Train/Test Split
+   │
+   ▼
+Model Training
+   │
+   ▼
+Prediction
+   │
+   ▼
+Evaluation
+```
+
+---
+
+# 📈 Linear Regression Equation
+
+```text
+y = mx + c
+```
+
+Where
+
+| Symbol | Meaning |
+|--------|---------|
+| x | Independent Variable |
+| y | Predicted Value |
+| m | Slope |
+| c | Intercept |
+
+---
+
+# 📊 Sample Output
+
+| Actual | Predicted |
+|---------|-----------|
+| 120 | 118.7 |
+| 145 | 147.1 |
+| 180 | 178.9 |
+| 200 | 202.3 |
+
+---
+
+# 📉 Evaluation Metrics
+
+| Metric | Description |
+|---------|-------------|
+| MAE | Mean Absolute Error |
+| MSE | Mean Squared Error |
+| RMSE | Root Mean Squared Error |
+| R² Score | Coefficient of Determination |
+
+---
+
+# 📷 Visualizations
+
+Place your generated graphs inside the **images/** folder.
+
+```
+images/
+├── scatter_plot.png
+├── regression_line.png
+└── prediction.png
+```
+
+Example:
+
+```markdown
+<img src="images/regression_line.png" width="700">
+```
+
+---
+
+# 🚀 Future Improvements
+
+- Multiple Linear Regression
+- Polynomial Regression
+- Ridge Regression
+- Lasso Regression
+- Cross Validation
+- Hyperparameter Tuning
+
+---
+
+# 💡 Key Learning Outcomes
+
+- Understanding supervised learning
+- Model training
+- Model prediction
+- Data visualization
+- Performance evaluation
+- Regression concepts
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
+
+---
+
+# ⭐ Support
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
+
+---
+
+<div align="center">
+
+### Happy Learning! 🚀📈
+
+Made with ❤️ using Python & Scikit-Learn
+
+</div>
