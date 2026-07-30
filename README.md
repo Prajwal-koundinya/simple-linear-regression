@@ -59,26 +59,15 @@ The objective is to predict continuous numerical values.
 # 📂 Project Structure
 
 ```text
-Linear-Regression/
+simple-linear-regression/
 │
-├── data/
-│   └── dataset.csv
-│
-├── notebooks/
-│   └── LinearRegression.ipynb
-│
-├── images/
-│   ├── scatter_plot.png
-│   └── regression_line.png
-│
-├── src/
-│   └── linear_regression.py
-│
-├── requirements.txt
-├── README.md
-└── LICENSE
+├── 📄 README.md              # Project documentation
+├── 📄 README.txt             # Legacy README
+├── 🐍 app.py                 # Flask web application
+├── 🐍 train_model.py         # Model training script
+├── 🧠 model.pkl              # Trained Linear Regression model
+└── 🌐 index.html             # Frontend interface
 ```
-
 ---
 
 # 🛠 Technologies Used
