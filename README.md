@@ -18,22 +18,6 @@
 
 ---
 
-# 📚 Table of Contents
-
-- 📖 About
-- ✨ Features
-- 📂 Project Structure
-- 🛠 Technologies Used
-- ⚙ Installation
-- ▶ Usage
-- 📊 Results
-- 📈 Evaluation Metrics
-- 🚀 Future Improvements
-- 🤝 Contributing
-- 📄 License
-
----
-
 # 📖 About
 
 Linear Regression is one of the simplest yet most powerful supervised machine learning algorithms. It learns the relationship between an independent variable (**X**) and a dependent variable (**Y**) by fitting the best possible straight line through the data.
